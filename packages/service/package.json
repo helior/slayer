@@ -1,7 +1,10 @@
 {
   "name": "service",
   "version": "1.0.0",
-  "description": "",
+  "description": "🧙🏼‍♂️ For Those Who Quest Together",
+  "repository": {
+    "url": "https://github.com/helior/slayer"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js"
