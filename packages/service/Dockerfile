@@ -4,8 +4,9 @@ WORKDIR /usr/src/slayer
 COPY package.json .
 COPY package-lock.json .
 
-ARG name
-ENV name=${name}
+
+# ARG name
+# ENV name=${name}
 
 RUN npm install
 
