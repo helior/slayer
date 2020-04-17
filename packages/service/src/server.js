@@ -5,7 +5,7 @@ const WebSocket = require('ws');
 console.log('Running...');
 
 const app = express()
-const port = 8000;
+const port = 80;
 const name = process.env.name || 'Wizards';
 app.get('/hello', (req, res) => res.send(`Hello ${name}!`));
 // app.listen(port, () => console.log(`App listening at http://localhost:${port}`));

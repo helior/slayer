@@ -4,7 +4,7 @@ WORKDIR /usr/src/slayer
 COPY package.json .
 COPY package-lock.json .
 
-
+EXPOSE 80
 # ARG name
 # ENV name=${name}
 

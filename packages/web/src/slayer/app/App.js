@@ -47,7 +47,7 @@ function App(props) {
 
   // WebSocket API: usage
   // @TODO: config for websocket URL
-  var socket = new WebSocket("ws://localhost:8000");
+  var socket = new WebSocket("ws://localhost:3000");
 
   // Create a unique-ish client identifier
   const time = Date.now().toString();
