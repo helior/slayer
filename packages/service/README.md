@@ -19,3 +19,8 @@ npm run e2e
 
 ### Integration testing
 One must always run integration tests on actual running services, so only test external URLs that you control. We build a docker container which includes all dependencies for running tests.
+
+### Run integration tests in CI
+```
+docker-composer up --exit-code-from cypress
+```
