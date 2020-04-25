@@ -2,13 +2,13 @@
 
 # Local Install
 Maybe run `lerna bootsrap` at the top of the repo. But generally,
-```
+```sh
 npm install
 npm run start
 ```
 
 ## Run integration tests locally
-```
+```sh
 npm run e2e
 ```
 
@@ -17,12 +17,19 @@ One must always run integration tests on actual running services, so only test e
 
 ## Run integration tests headlessly from container
 This is ideal for using with continuous integration (CI).
-```
+```sh
+## assumes `npm start`
+npm run 2e2:docker
+
+
+# Or for CI
 ./bin/e2e_docker \
-  --config baseUrl=http://host.docker.internal:8080
+  --config \
+    baseUrl=http://host.docker.internal:8080 \
+    video=false
 ```
 
 ## Deploy
-```
+```sh
 gcloud app deploy app.yaml
 ```
