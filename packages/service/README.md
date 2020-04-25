@@ -9,6 +9,7 @@ npm run start
 
 ## Run integration tests locally
 ```sh
+## assumes `npm start`
 npm run e2e
 ```
 
@@ -19,13 +20,13 @@ One must always run integration tests on actual running services, so only test e
 This is ideal for using with continuous integration (CI).
 ```sh
 ## assumes `npm start`
-npm run 2e2:docker
+npm run e2e:docker
 
 
 # Or for CI
 ./bin/e2e_docker \
   --config \
-    baseUrl=http://host.docker.internal:8080 \
+    baseUrl=http:http://example.com \
     video=false
 ```
 
