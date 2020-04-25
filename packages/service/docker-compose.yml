@@ -1,0 +1,10 @@
+## Could also just run the following:
+## docker run -it -v $PWD:/e2e -w /e2e cypress/included:4.4.1 --config baseUrl=http://host.docker.internal:8080
+
+version: '3.2'
+services:
+  cypress:
+    image: "cypress/included:4.4.1"
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
