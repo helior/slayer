@@ -1,6 +1,6 @@
 describe('Slayer Service health check', () => {
   beforeEach( () => {
-    cy.request('http://127.0.0.1:8080/health-check').as('hcRequest');
+    cy.request('/health-check').as('hcRequest');
   })
 
   it('Inspects status', () => {

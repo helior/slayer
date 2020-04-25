@@ -12,15 +12,17 @@ npm run start
 npm run e2e
 ```
 
-
-### Deploy
-```gcloud app deploy service-name-app.yaml```
-
-
-### Integration testing
+## Integration testing
 One must always run integration tests on actual running services, so only test external URLs that you control. We build a docker container which includes all dependencies for running tests.
 
-### Run integration tests in CI
+## Run integration tests headlessly from container
+This is ideal for using with continuous integration (CI).
 ```
-docker-composer up --exit-code-from cypress
+./bin/e2e_docker \
+  --config baseUrl=http://host.docker.internal:8080
+```
+
+## Deploy
+```
+gcloud app deploy app.yaml
 ```

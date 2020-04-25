@@ -14,5 +14,8 @@ CMD ["npm", "start"]
 
 COPY . .
 
+## Build-time env vars
 # docker build --build-arg name=Helior --tag slayer-service:dev .
-# docker run --publish 8000:3000 --detach -e name=Calhoun slayer-service:dev
+
+## Run-time env vars
+# docker run --publish 8080:8080 --detach -e name=Calhoun slayer-service:dev

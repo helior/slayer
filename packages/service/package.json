@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "e2e": "cypress open"
+    "e2e": "cypress open",
+    "e2e:docker": "./bin/e2e_docker --config baseUrl=http://host.docker.internal:8080"
   },
   "keywords": [],
   "author": "",
