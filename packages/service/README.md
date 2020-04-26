@@ -4,7 +4,7 @@
 Maybe run `lerna bootsrap` at the top of the repo. But generally,
 ```sh
 npm install
-npm run start
+npm start
 ```
 
 ## Run integration tests locally
