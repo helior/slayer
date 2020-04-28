@@ -10,12 +10,24 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-A note for first runs to install DB tables.
+
+### Development
+Django uses a LOT of scaffolding scripts. And "chore" scripts. Ugh.
+
+This one handles changes in the app models
 ```
 python manage.py migrate
+```
 
+This one creates a new app
+```
+python manage.py startapp APP_NAME
+```
 
-python manage.py startapp character
+Ths on installs a new app
+```
+python manage.ph makemigrations
+python manage.py migrate
 ```
 
 
