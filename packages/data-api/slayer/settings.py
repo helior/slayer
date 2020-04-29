@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'slayer.apps.character',
+    'slayer.apps.universe',
 ]
 
 MIDDLEWARE = [
