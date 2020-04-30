@@ -76,3 +76,13 @@ secret (password)
 
 
 #CharacterState
+
+
+
+### Browser Tabs
+https://docs.djangoproject.com/en/3.0/intro/tutorial02/
+https://docs.djangoproject.com/en/3.0/intro/overview/#design-your-model
+https://docs.djangoproject.com/en/3.0/contents/
+https://github.com/gothinkster/django-realworld-example-app
+https://docs.djangoproject.com/en/3.0/topics/db/models/
+https://docs.djangoproject.com/en/3.0/intro/install/
