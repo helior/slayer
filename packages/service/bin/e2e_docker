@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # grabs leftover parameters and passes it to ENTRYPOINT
-docker run -it -v $PWD:/e2e -w /e2e cypress/included:4.4.1 $@
+docker run -i -v $PWD:/e2e -w /e2e cypress/included:4.4.1 $@
