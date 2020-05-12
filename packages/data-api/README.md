@@ -97,6 +97,7 @@ secret (password)
 
 ## TODOs
 - swagger docs
+- I still need API for character, universe
 
 ### Browser Tabs
 https://docs.djangoproject.com/en/3.0/intro/tutorial02/
