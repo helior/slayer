@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 const name = process.env.name || 'Wizards';
 
-app.get('/health-check', (req, res) => res.send(`Hello ${name}!`));
+app.get('/health-check', (req, res) => res.send({"version": package.version, "status": "ok"}));
 // app.listen(port, () => console.log(`App listening at http://localhost:${port}`));
 const server = http.createServer(app);
 server.listen(port, () => {
