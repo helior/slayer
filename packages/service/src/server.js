@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
-
+const package = require('../package.json');
 console.log('Running...');
 
 const app = express();
